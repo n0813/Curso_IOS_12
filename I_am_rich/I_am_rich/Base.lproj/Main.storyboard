@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
-    <device id="retina4_0" orientation="portrait">
+    <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
@@ -15,36 +15,62 @@
             <objects>
                 <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="I_am_rich" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ruby" translatesAutoresizingMaskIntoConstraints="NO" id="O9k-Ua-Fcw">
-                                <rect key="frame" x="40" y="180" width="240" height="208"/>
+                                <rect key="frame" x="85" y="310" width="205" height="181"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="181" id="8RO-MA-56Z"/>
+                                </constraints>
                             </imageView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="I am Rich" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="z2Y-TY-szi">
-                                <rect key="frame" x="78.5" y="447" width="163" height="51"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3GQ-dh-Yi8">
+                                <rect key="frame" x="16" y="540" width="343" height="42"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="343" id="889-5T-8Ad"/>
+                                    <constraint firstAttribute="height" constant="42" id="wWc-1J-BgU"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="25"/>
+                                <size key="titleShadowOffset" width="-1" height="1"/>
+                                <state key="normal" title="Pulsame y seras rico!">
+                                    <color key="titleColor" red="0.9263253212" green="0.087908245620000006" blue="0.1329711676" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    <color key="titleShadowColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <action selector="btnAlerta:" destination="BYZ-38-t0r" eventType="touchUpInside" id="V9i-Ub-4Yg"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="I am Rich" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="z2Y-TY-szi">
+                                <rect key="frame" x="16" y="215" width="343" height="52"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="343" id="a12-Ql-z29"/>
+                                </constraints>
                                 <fontDescription key="fontDescription" name="AvenirNext-Bold" family="Avenir Next" pointSize="37"/>
-                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <nil key="highlightedColor"/>
+                                <color key="textColor" red="0.92632532119750977" green="0.087908245623111725" blue="0.13297116756439209" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="highlightedColor" red="0.92632532119750977" green="0.087908245623111725" blue="0.13297116756439209" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="shadowColor" red="0.88969114941772054" green="0.92632532119750977" blue="0.88176629609198698" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <size key="shadowOffset" width="2" height="-1"/>
                             </label>
                         </subviews>
                         <color key="backgroundColor" red="0.38560057026116956" green="0.00052553114527089436" blue="0.38261274145998286" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="z2Y-TY-szi" secondAttribute="trailing" constant="78.5" id="5zf-vC-d5W"/>
-                            <constraint firstItem="O9k-Ua-Fcw" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="40" id="PbI-mS-fp6"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="O9k-Ua-Fcw" secondAttribute="bottom" constant="180" id="VtT-J9-hLd"/>
-                            <constraint firstItem="O9k-Ua-Fcw" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="160" id="g91-r6-Gh8"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="z2Y-TY-szi" secondAttribute="bottom" constant="70" id="gkP-Db-i3F"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="O9k-Ua-Fcw" secondAttribute="trailing" constant="40" id="iOg-x9-wXX"/>
-                            <constraint firstItem="z2Y-TY-szi" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="78.5" id="lJH-xz-uyF"/>
-                            <constraint firstItem="z2Y-TY-szi" firstAttribute="top" secondItem="O9k-Ua-Fcw" secondAttribute="bottom" constant="59" id="pV4-eS-Tma"/>
+                            <constraint firstItem="O9k-Ua-Fcw" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="85" id="0Sd-Ne-r56"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="3GQ-dh-Yi8" secondAttribute="trailing" constant="16" id="1J5-RM-Uft"/>
+                            <constraint firstItem="3GQ-dh-Yi8" firstAttribute="top" secondItem="O9k-Ua-Fcw" secondAttribute="bottom" constant="49" id="Hwt-Ty-Ard"/>
+                            <constraint firstItem="z2Y-TY-szi" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="N7v-kI-W5F"/>
+                            <constraint firstItem="z2Y-TY-szi" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="NdC-jg-PaC"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="O9k-Ua-Fcw" secondAttribute="trailing" constant="85" id="RTa-8Y-EpB"/>
+                            <constraint firstItem="3GQ-dh-Yi8" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="bSV-s1-5SH"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="3GQ-dh-Yi8" secondAttribute="bottom" constant="85" id="jcn-MW-bKz"/>
+                            <constraint firstItem="O9k-Ua-Fcw" firstAttribute="top" secondItem="z2Y-TY-szi" secondAttribute="bottom" constant="43" id="u2f-eh-TCp"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="z2Y-TY-szi" secondAttribute="trailing" constant="16" id="zAv-ZA-8yD"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="63.75" y="32.74647887323944"/>
+            <point key="canvasLocation" x="63.200000000000003" y="31.934032983508249"/>
         </scene>
     </scenes>
     <resources>
